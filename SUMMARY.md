@@ -39,6 +39,7 @@
        * [Embedable video](modules/media_entity/embeddable_video.md)
        * [Twitter](modules/media_entity/twitter.md)
        * [Instagram](modules/media_entity/instagram.md)
+   * [Media Pinkeye](modules/media_pinkeye/intro.md)
    * [Crop API](modules/crop/intro.md)
        * [Architecture](modules/crop/architecture.md)
        * [Implementation examples](modules/crop/Implementation_examples.md)
