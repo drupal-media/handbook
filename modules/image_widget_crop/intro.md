@@ -1,30 +1,60 @@
 # ImageWidgetCrop module
 
-[ImageWidgetCrop](https://www.drupal.org/sandbox/woprrr/2571403) provides an interface for using the features of the [Crop API](https://www.drupal.org/project/crop). This widget provide an UX for use a crop on all fields images. This module have particularity to purpose capability to crop the same image by 'Crop type' configured. It's very usefull for editorial sites or media management sites.
+[ImageWidgetCrop](https://www.drupal.org/project/image_widget_crop) provides an interface for using the features of the [Crop API](https://www.drupal.org/project/crop). This widget provide an UX for use a crop on all fields images. This module have particularity to purpose capability to crop the same image by 'Crop type' configured. It's very usefull for editorial sites or media management sites.
 
-## Try me
+## Try demo module
+You can Test ImageWidgetCrop in action directly with the sub-module "ImageWidgetCrop example" to test differents usecase of this module.
 
-You can Test ImageWidgetCrop in action directly with the sub-module, "ImageWidgetCrop example" to test different usecases of this module.
+You can try the module live with the website dedicated to demonstrate the module [DEMO SITE](http://www.image-widget-crop.com) with demo user 
+Psw: "demo"
+User: "demo"
+
+You can also see [Demo vidéo](https://www.youtube.com/watch?v=Ioo_bYnCOOg)
 
 ## Requirements
 
 1. [Crop API](https://www.drupal.org/project/crop)
+1. [Cropper Library](https://github.com/fengyuanchen/cropper)
 
-## Installation
+##Installation
 
-1. Download [Crop API](https://www.drupal.org/node/2376659/release) from Drupal.org.
-2. Download [ImageWidgetCrop](https://github.com/woprrr/image_widget_crop) from GitHub.
-3. Install both Crop API and ImageWidgetCrop in the [usual way](https://www.drupal.org/documentation/install/modules-themes/modules-8).
+1. Download and extract the module to your (`sites/all/modules/contrib`) folder.
+2. Enable the module on the Drupal Modules page (`admin/modules`) or using
+   $ drush en
+
+The module is currently using Cropper as a library to display,
+ the cropping widget.
+To properly configure it, do the following:
+
+* Local library:
+  1. Download the latest version of Cropper at
+     https://github.com/fengyuanchen/cropper.
+  2. Copy the dist folder into:
+     - /libraries/cropper or
+     - /sites/default/libraries/cropper or
+     - /sites/EXAMPLE/libraries/cropper or
+     - /sites/all/libraries/cropper
+  3. Enable the libraries module.
+
+* External library:
+  1. Set the external URL for the minified version of the library and CSS file,
+     in Image Crop Widget settings (`/admin/config/media/crop-widget`), found at
+     https://cdnjs.com/libraries/cropper.
+
+ NOTE: The external library is set by default when you enable the module.
 
 ## Usage
 
+ImageWidgetCrop can be used in different contexts.
+
+### General Configuration
 1. Create a Crop Type
   * On `admin/structure` choose **Crop types**
     ![Step 1](images/step_1.png)
   * Click on **+ Add crop type**
     ![Step 2](images/step_2.png)
-  * Add Name, Description and Aspect Ratio for your crop type and click **Save crop type**
-    ![Step 3](images/step_3.png)
+  * Add Name, Description, Aspect Ratio and Soft/Hard limit for your crop type and click **Save crop type**
+    ![Step 3](images/step_3.png)’”
 2. Create an Image Style
   * On `admin/structure/config` choose **Image styles**
     ![Step 4](images/step_4.png)
@@ -36,27 +66,37 @@ You can Test ImageWidgetCrop in action directly with the sub-module, "ImageWidge
     ![Step 7](images/step_7.png)
   * Choose your Crop Type, to apply your crop selection, and click **Add effect**
     ![Step 8](images/step_8.png)
-3. Create an Image field
-  * On desired content type (i.e. Basic page), on `admin/structure/types`, click on **Manage fields**
-    ![Step 9](images/step_9.png)
-  * Click on **+ Add field**
-    ![Step 10](images/step_10.png)
-  * Choose **Image**, add label and click **Save and continue**
-    ![Step 11](images/step_11.png)
-4. In form display of your page, on `admin/structure/types/manage/page/form-display`, set the widget for your field to ImageWidgetCrop
-  ![Step 12](images/step_12.png)
-  and select your crop types in the Crop settings list and click **Update** and then **Save**. You can configure the widget to create different crops on each crop types. For example, if you have an editorial site, you need to display an image on different places. With this option, you can set an optimal crop zone for each of the image styles applied to the image.
-  ![Step 13](images/step_13.png)
-5. On Manage display of your page, on `admin/structure/types/manage/page/display`, set the display formatter Image
-  ![Step 14](images/step_14.png)
-  and choose your image style and click **Update** and then **Save**
-  ![Step 15](images/step_15.png)
-6. Add an image with your widget to your content and crop your picture, by crop types used for this image
-  ![Step 16](images/step_16.png)
-  ![Step 17](images/step_17.png)
-  
-## ImageWidgetCrop Code Quality
+3. General configuration
+  * ImageWidgetCrop module can be implemented in few usecases. Except with Fields usage the configuration of (`image_crop`) element in (`admin/config/media/crop-widget`).
+    ![General configuration](images/step_18.png)
 
-* [SensioLabsInsight](https://insight.sensiolabs.com/projects/0e2f44af-6837-4772-b3e0-c373faa95ae6)
-* [Scrutinizer](https://scrutinizer-ci.com/g/woprrr/image_widget_crop/?branch=8.x-1.x)
-* [Travis-ci](https://travis-ci.org/woprrr/image_widget_crop)
+### FormApi
+If we need to implement `image_crop` element manually to your forms you can use this general configuration or set all options manualy in code.
+  #### Using General configuration:
+  ```php
+  $crop_config = \Drupal::config('image_widget_crop.settings');
+  $form['image_crop'] = [
+    '#type' => 'image_crop',
+    '#file' => $file,
+    '#crop_type_list' => $crop_config->get('settings.crop_list'),
+    '#crop_preview_image_style' => $crop_config->get('settings.crop_preview_image_style'),
+    '#show_default_crop' => $crop_config->get('settings.show_default_crop'),
+    '#warn_mupltiple_usages' => $crop_config->get('settings.warn_mupltiple_usages'),
+  ];
+  ```
+  #### Using Custom element configuration:
+  ```php
+  $form['image_crop'] = [
+    '#type' => 'image_crop',
+    '#file' => $file_object,
+    '#crop_type_list' => ['crop_16_9', 'crop_free'],
+    '#crop_preview_image_style' => 'crop_thumbnail',
+    '#show_default_crop' => FALSE,
+    '#warn_mupltiple_usages' => FALSE,
+  ];
+  ```
+
+## Maintainers
+
+- [Alexandre Mallet (@woprrr)](https://drupal.org/user/858604)
+- [Janez Urevc (@slashrsm)](https://drupal.org/user/744628)

@@ -8,7 +8,7 @@ Examples of possible use cases:
 
 ## Configuration
 
-This is API module. In order to crop your images you need a UI module. First such (sandbox) module is [Image widget crop](https://www.drupal.org/sandbox/woprrr/2571403).
+This is API module. In order to crop your images you need a UI module. First such module is [Image widget crop](https://www.drupal.org/project/image_widget_crop).
 
 ## Technical details
 
@@ -20,3 +20,4 @@ We use Github pull request workflow. In order to contribute to the module please
 
 ## Maintainers
 - [Janez Urevc (@slashrsm)](https://drupal.org/user/744628)
+- [Alexandre Mallet (@woprrr)](https://drupal.org/user/858604)
