@@ -50,6 +50,10 @@ The modules are intended to be uses together as needed in order to provide as ba
  * *Latest Status:* TBA
 
 
+* [**File Entity Browser:**](modules/file_browser/intro.md) provides a nice content creator/editor experience for uploading files (implementing [Dropzonejs](https://www.drupal.org/project/dropzonejs)) and browsing/selecting files (implementing [Entity Browser](modules/entity_browser/intro.md).
+ * *Latest Status:* TBA
+
+
 * [**Image Widget Crop:**](modules/image_widget_crop/intro.md) provides an interface for using the features of the [Crop API](https://www.drupal.org/project/crop) ([d.o](https://www.drupal.org/sandbox/woprrr/2571403))
  * *Latest Status:* TBA
 
