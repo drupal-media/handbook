@@ -11,7 +11,7 @@ In Drupal 8 core, As in D7 core, there is out of the box support for files, imag
 
 As discussed in the introduction to this guide, the Drupal 8 Media ecosystem includes several independent but interoperable/pluggable Media modules.
 
-The modules are intended to be uses together as needed in order to provide as basic or advance a media solution as is needed for a particular Drupal project.
+The modules are intended to be used together as needed in order to provide as basic or advanced a media solution as is needed for a particular Drupal project.
 
 
 ###D8 Media Storage Modules
@@ -30,7 +30,7 @@ The modules are intended to be uses together as needed in order to provide as ba
 
 ###D8 Media U/I Modules
 
-* [**Crop API:**](modules/crop/intro.md) an API for image cropping that's intended to be used with a related API module such as [Image Widget Crop]( https://www.drupal.org/sandbox/woprrr/2571403) ([d.o](https://www.drupal.org/project/crop))
+* [**Crop API:**](modules/crop/intro.md) an API for image cropping that is intended to be used with a related API module such as [Image Widget Crop]( https://www.drupal.org/sandbox/woprrr/2571403) ([d.o](https://www.drupal.org/project/crop))
  * *Latest Status:* TBA
 
 
@@ -64,11 +64,11 @@ The modules are intended to be uses together as needed in order to provide as ba
 
 ###D8 Media Display Modules
 
-* [**Fallback Formatter:**](modules/fallback_formatter/intro.md) a field formatter that attempt multiple formatters for displaying file and applies the first one that returns output ([d.o](https://www.drupal.org/project/fallback_formatter))
+* [**Fallback Formatter:**](modules/fallback_formatter/intro.md) a field formatter that attempts multiple formatters for displaying file and applies the first one that returns output ([d.o](https://www.drupal.org/project/fallback_formatter))
  * *Latest Status:* TBA
 
  
-* [**Field Formatter:**](modules/field_formatter/intro.md) a field formatter that attempt multiple formatters for displaying file and applies the first one that returns output ([d.o](https://www.drupal.org/project/field_formatter))
+* [**Field Formatter:**](modules/field_formatter/intro.md) a field formatter that attempts multiple formatters for displaying file and applies the first one that returns output ([d.o](https://www.drupal.org/project/field_formatter))
  * *Latest Status:* TBA
 
 
