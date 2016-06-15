@@ -4,9 +4,9 @@
 
 This guide provides and overview of the approach to Media in Drupal 8.
 
-The Drupal Media Team has set an ambitious [goal](roadmap.md) of ensuring Drupal offers best media solution available in any web framework. 
+The Drupal Media Team has set an ambitious [goal](roadmap.md) of ensuring Drupal offers best media solution available in any web framework.
 
-We still have a ways to go to achieve that goal, but this guide will help you to understand our [Roadmap](roadmap.md) and [Module Status](modules/intro.md). 
+We still have a ways to go to achieve that goal, but this guide will help you to understand our [Roadmap](roadmap.md) and [Module Status](modules/intro.md).
 
 As discussed in the [Roadmap](roadmap.md) and throughout this Guide, the Media Team has worked collaboratively to separate Media functionality into several independent modules that can be used together based as appropriate. Over time we'll be adding examples of how these modules can be integrated.
 
@@ -20,7 +20,7 @@ The Drupal Media team is actively seeking contributions and new team members. Th
 
 As mentioned above, Media for Drupal 8 is undergoing a re-architecture into individual components. For example, the Media Browser functionality is being developed into the Entity Browser module and embedding media in WYSIWYG is being developed into the Entity Embed module.
 
-While not all of these components are complete you can still to a lot with what's done. This Guide includes a [Module Status](status.md) section which provide an overview of the ecosystem, and then more detailed guides for each of the available modules:
+While not all of these components are complete you can still do a lot with what's done. This Guide includes a [Module Status](status.md) section which provide an overview of the ecosystem, and then more detailed guides for each of the available modules:
 
 * [Crop API](modules/crop/intro.md)
 * [DropzoneJS](modules/dropzonejs/intro.md)
@@ -33,9 +33,9 @@ While not all of these components are complete you can still to a lot with what'
 * [Flysystem](modules/flysystem/intro.md)
 * [Image Widget Crop](modules/image_widget_crop/intro.md)
 * [Media Entity](modules/media_entity/intro.md)
-* [Media Pinkeye](modules/media_pinkeye/intro.md).
-* [URL Embed](modules/url_embed/intro.md).
-* [Image Effects](modules/image_effects/intro.md).
+* [Media Pinkeye](modules/media_pinkeye/intro.md)
+* [URL Embed](modules/url_embed/intro.md)
+* [Image Effects](modules/image_effects/intro.md)
 
 
 ### Troubleshooting
