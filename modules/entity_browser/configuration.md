@@ -1,8 +1,11 @@
 # Configuration file structure
 
-Entity browser currently doesn't provide any configuration UI. Entity browsers need to be created as YML configuration files and imported using standard means.
+Entity browsers are configuration entities that can be created either by the site builder on the UI or imported from YAML configuration files.
 
-This is a typical configuration file (entity_browser.browser.field_files.yml from example module):
+To create a new browser go to /admin/config/content/entity_browser and click on "Add Entity Browser". Follow the wizard according to your preferences through all the steps of the creation process.
+
+If you are using a module that provides default or example configuration, these will be in the .yml files and will have the following structure (example entity_browser.browser.field_files.yml from the example module): 
+
 
 ```yaml
 name: test_files
