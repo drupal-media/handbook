@@ -14,7 +14,7 @@ We also hope that this guide will help you understand best practices and get sta
 
 ## Getting Involved
 
-The Drupal Media team is actively seeking contributions and new team members. There are many ways to get involved, including helping with funding, project management communications, documentation, testing and development. Please check out our [Contributing](contributing.md) page for full details.
+The Drupal Media team is actively seeking contributions and new team members. There are many ways to get involved, including helping with funding, project management communications, documentation, testing and development. Submit edits to this guide at the [GitHub repository](https://github.com/drupal-media/d8-guide). Please check out our [Contributing](contributing.md) page for full details.
 
 ##Using this Guide
 
