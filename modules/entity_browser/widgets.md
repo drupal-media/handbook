@@ -41,7 +41,7 @@ You can find more information about the integration between **Entity Browser** a
 
 You can find on the [project page](https://drupal.org/project/entity_browser) a list of modules that provide additional widgets. Some examples are:
 - [Media entity image](https://drupal.org/project/media_entity_image) - File upload
-- [File Entity Browser](https://drupal.org/project/file_browser) - File upload, with DropzoneJS
+- [File Entity Browser](https://drupal.org/project/file_browser) - Bulk file upload, with DropzoneJS integration
 - [Content Browser](https://drupal.org/project/content_browser) - Content view (nodes)
 - Etc
 

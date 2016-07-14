@@ -16,7 +16,7 @@ The standard configuration options for this type are:
 - **Width** - The width of the iFrame element
 - **Height** - The height of the iFrame element
 - **Link text** - The label to use on the display submit button
-- **Auto-open** - Whether the display (iframe, modal, etc) should open automatically or if the end user needs to click on a link to launch the display.
+- **Auto-open** - Whether the display should open automatically or if the end user needs to click on a link to launch the display.
 
 ### Modal
 
