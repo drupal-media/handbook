@@ -15,37 +15,33 @@ This workflow can be better understood in the following images:
 
 1) Nothing is selected, the **selection set** is empty
 
-![](selection-multi-step-1.png)
+![](selection-display-multi-step-1.png)
 
 2) Upload 2 images using the widget, there is now an option to add these 2 to the current selection
 
-![](selection-multi-step-2.png)
+![](selection-display-multi-step-2.png)
 
 3) Add these 2 images to the selection
 
-![](selection-multi-step-3.png)
+![](selection-display-multi-step-3.png)
 
 4) Let's select now some existing images from the media library
 
-![](selection-multi-step-4.png)
+![](selection-display-multi-step-4.png)
 
-5) We could re-order them to better suit our needs
+5) Let's upload another image with the first widget (upload)
 
-![](selection-multi-step-5a.png)
+![](selection-display-multi-step-5.png)
 
-![](selection-multi-step-5b.png)
+6) We can then manually re-order the selection to suit our needs, if necessary
 
-6) Let's upload a last image
+![](selection-display-multi-step-6a.png)
 
-![](selection-multi-step-6.png)
+![](selection-display-multi-step-6b.png)
 
-7) We can check the current content of our selection
+7) We can finally confirm the operation to use the content of our selection display in our field
 
-![](selection-multi-step-7.png)
-
-8) And finally confirm the operation to use the content of our selection display in our field
-
-![](selection-multi-step-8.png)
+![](selection-display-multi-step-7.png)
 
 
 The **multi-step** selection display provides the following configuration options:
