@@ -2,7 +2,7 @@
 
 Entity browsers are configuration entities that can be created [either by the site builder on the UI](creating_browser_through_ui.md) or imported from YAML configuration files.
 
-If you are using a module that provides default or example configuration, these will be in the .yml files and will have the following structure (example entity_browser.browser.field_files.yml from the example module): 
+If you are using a module that provides default or example configuration, these will be in the .yml files and will have the following structure (example ``` entity_browser.browser.field_files.yml``` from the example sub-module): 
 
 
 ```yaml

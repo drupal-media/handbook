@@ -7,6 +7,11 @@ As with the other plugins, contrib and custom modules can extend and provide add
 The **Entity Browser** module provides the following **selection display** plugins:
 
 
+### No selection display
+
+This option is the simplest alternative, when you do not want your Entity Browser to provide any mechanism to deal with the temporary "selection area" of the entities being retrieved by the browser.
+
+
 ### Multi-step selection display
 
 This is the option you might want to use in the most flexible or complex media handling workflows. The **multi-step selection display** allows the editor to use different widgets sequentially in order to populate a **selection set** and these entities being selected will be visible in the **selection** area.
@@ -53,21 +58,35 @@ The **multi-step** selection display provides the following configuration option
 
 ### View selection display
 
-[TODO: make snapshots of this workflow]
+This type of selection display can use **an arbitrary view** to be used as "selection area", with all the flexibility that a custom-made view can bring to your browser.
 
-The **view** selection display provides the following configuration option:
+The only requirement you need to pay attention to when using this option is that your  view needs to have a Contextual Filter that receives entities IDs, with multiple-valued arguments (for instance: "12,45,22,938") enabled.
+
+There are some known limitations of this display type:
+- If a given entity is selected twice, it will be displayed only once.
+- The view used as selection display will generally not respect the order of the selected entities.
+These are all limitations of the views system, in core.
+
+In order to create an Entity Browser with this type of selection display, the steps to follow are:
+
+1) Create a view that showing entities (or any representation of entities you would need) and make sure that this view is configured to accept as **Contextual Filter** the main ID of the entity (**NID** for nodes, **UID** for users, etc).
+
+2) When creating the Browser through the wizard, select **View selection display** on the dropdown of the first step.
+
+3) Indicate the view and display names in the fourth step of the wizard:
 - **View : view display** - The view name and display name to be used to show the entities in the selection area during the selection.
 
 
-### No selection display
 
-This option is the simplest alternative, when you do not want your Entity Browser to provide any mechanism to deal with the temporary "selection area" of the entities being retrieved by the browser.
-
+#### Examples of selection displays that could be built with a custom view:
 
 
 
+#### Grid
+![Grid selection display](images/seldisplay_grid.png)
 
+#### Table
+![Table selection display](images/seldisplay_table.png)
 
-
-
-
+#### List
+![List selection display](images/seldisplay_list.png)
