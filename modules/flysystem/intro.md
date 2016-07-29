@@ -9,19 +9,21 @@ Flysystem is made available in Drupal 8 by the [Flysystem module](https://www.dr
 * Dropbox
 * Rackspace
 * Amazon S3
+
 It's relatively easy to implement new adapters, and more are becoming available all the time.
 
-When joined with a flysystem adapter module, the flysystem module offers four things:
-* a syntax to define the access details for the remote storage location in Drupal's settings.php.
-* a storage setting for Drupal's core file field.
-* access to the Flysystem API so you can execute standard file system operations (read, write, list, etc.) on your remote storage from your custom code.
-* a synchronisation UI that enables you to manually synchronise local and remote storage locations.
+When joined with a Flysystem adapter module, the Flysystem module offers four things:
+* a syntax to define the access details for the remote storage location in Drupal's settings.php
+* a storage setting for Drupal's core file field
+* access to the Flysystem API so you can execute standard file system operations (read, write, list, etc.) on your remote storage from your custom code
+* a synchronisation UI that enables you to manually synchronise local and remote storage locations
+* the ability to serve aggregated Javascript and CSS files from a remote filesystem
 
 # Simple remote storage with Flysystem
 
-Firstly, install Flysystem module and an adapter module e.g. Flysystem_dropbox
+Firstly, install the Flysystem module and an adapter module e.g. Flysystem_dropbox.
 
-Secondly, specify the remote storage location in Drupal's settings.php
+Secondly, specify the remote storage location in Drupal's settings.php.
 
 ```php
     $schemes = [
@@ -45,9 +47,9 @@ If you upload a file in Drupal using that file field, it will then be stored on 
 
 When the file field is rendered by Drupal (e.g. because the content or media entity having that file field is requested by a site visitor) then the file will be served up to your visitor, exactly as if it were stored on your server. All the Drupal field formatters, theming, etc. work exactly as normal.
 
-## File access control
+## Private file access control
 
-Flysystem storage works like private files in drupal 8. It restricts access to the original files and lets Drupal and its modules control access to the files.
+With the configuration above, Flysystem storage works like private files in Drupal 8. It restricts access to the original files and lets Drupal and its modules control access to the files.
 
 Instead of rendering a URL directly to a file at its location (e.g. https://mybucket.s3.amazonaws.com/myfile.mp3), it renders instead a URL on your webserver (e.g. http://mywebserver.com/system/files/myfile.mp3). Requests to this URL are intercepted by Drupal, which uses its standard and configurable access control logic to decide whether or not to return the file or an "Access denied" message.
 
@@ -55,7 +57,25 @@ By default when using a file field, anyone who can access the entity to which th
 
 The situation is slightly more complicated with images - [see here for more](https://www.drupal.org/node/2541116).
 
-## Bandwidth
+## Public file access
 
-One issue to be aware of with Flysystem is that as it is not handing out a direct URL to the third party server, your web server is still involved in each request, and so there may be bandwidth or traffic implications for your web server if you serve up a lot of media.
-@Todo: better information on this matter.
+If we updated the exmaple configuration, by adding the 'public' configuration key, file storage will work similarly to public files.
+
+```php
+    $schemes = [
+        'dropboxexample' => [
+            'driver' => 'dropbox',
+            'config' => [
+               'token' => '#my-dropbox-token#',
+               'client_id' => #my-dropbox-email-id#,
+               'prefix' => '[/dropbox subdirectory]', // Optional.
+            ],
+            'public' => TRUE, // Serves files directly from the storage provider.
+        ],
+    ]
+    $settings['flysystem'] = $schemes;
+```
+
+Thus, files will be accessed directly from their file location e.g. https://mybucket.s3.amazonaws.com/myfile.mp3.
+
+Only certain Flysystem plugins support the 'public' configuration key. FTP, SFTP, and ZIP do not support public file access since the storage protocols do not support HTTP access.
