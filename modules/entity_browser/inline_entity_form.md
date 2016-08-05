@@ -31,7 +31,7 @@ This allows site builders to create nicer and more powerful experience for conte
 To configure this option, please follow these steps:
 
 1- Go to your entity **"Manage Form Display"** configuration page, where you can configure the widgets of your entity_reference field. For example, if you have the field in the "page" content type, this will be available at the URL: 
-```/admin/structure/types/manage/page/form-display```
+`/admin/structure/types/manage/page/form-display`
 
 2- Choose **"Inline entity form - Complex"** as primary widget to your field
 
