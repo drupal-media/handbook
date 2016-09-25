@@ -74,8 +74,10 @@ Cancels background file checking.
 Setting up the following in crontab on Linux should cause file checking to
 run at 2am each night until all files are checked:
 
-```0 2 * * * drush file-checking-start
-* * * * * drush file-checking-execute 50```
+```
+0 2 * * * drush file-checking-start
+* * * * * drush file-checking-execute 50
+```
 
 
 
@@ -91,7 +93,6 @@ minute, if you want these cron jobs to be triggered at this frequency
 by Ultimate Cron.
 
 #Checking on File Entity Changes
--------------------------------
 
 You can configure File checker to check files whenever file entity is
 created or has its uri changed. To do this, use the settings UI at
