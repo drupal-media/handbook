@@ -29,6 +29,7 @@ While not all of these components are complete you can still do a lot with what'
 * [Entity Browser](modules/entity_browser/intro.md)
 * [Fallback Formatter](modules/fallback_formatter/intro.md)
 * [Field Formatter](modules/field_formatter/intro.md)
+* [File Checker](modules/file_checker/intro.md)
 * [File Entity](modules/file_entity/intro.md)
 * [Flysystem](modules/flysystem/intro.md)
 * [Image Effects](modules/image_effects/intro.md)
