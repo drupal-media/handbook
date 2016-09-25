@@ -47,6 +47,7 @@
     * [ImageWidgetCrop](modules/image_widget_crop/intro.md)
     * [Fallback Formatter]((modules/fallback_formatter/intro.md)
     * [Field formatter](modules/field_formatter/intro.md)
+    * [File checker](modules/file_checker/intro.md)
     * [Flysystem](modules/flysystem/intro.md)
     * [Image Effects](modules/image_effects/intro.md)
     * [Media](modules/media/intro.md)
