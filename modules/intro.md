@@ -25,10 +25,14 @@ The modules are intended to be used together as needed in order to provide as ba
 
 
 * [**Flysystem:**](flysystem/intro.md) provides a bridge to use Flysystem as Drupal stream wrappers ([d.o](https://www.drupal.org/project/flysystem))
- * *Latest Status:* TBA
+ * *Latest Status:* Alpha
 
 
 ###D8 Media UI Modules
+
+* **Content Browser:** provides a nice content creator/editor experience for browsing and selecting existing content (nodes). It is built upon the [Entity Browser](modules/entity_browser/intro.md) module, improving the UI and providing a pre-configured browser out-of-the-box. ([d.o](https://www.drupal.org/project/content_browser))
+ * *Latest Status:* Alpha
+
 
 * [**Crop API:**](crop/intro.md) an API for image cropping that is intended to be used with a related API module such as [Image Widget Crop]( https://www.drupal.org/project/image_widget_crop) ([d.o](https://www.drupal.org/project/crop))
  * *Latest Status:* Stable (general availability) release
@@ -47,15 +51,19 @@ The modules are intended to be used together as needed in order to provide as ba
 
 
 * [**Entity Embed:**](entity_embed/intro.md) allows any entity to be embedded within a text area using a WYSIWYG editor. ([d.o](https://www.drupal.org/project/entity_embed))
- * *Latest Status:* Alpha
+ * *Latest Status:* Beta
 
 
 * [**File Entity Browser:**](file_browser/intro.md) provides a nice content creator/editor experience for uploading files (implementing [Dropzonejs](https://www.drupal.org/project/dropzonejs)) and browsing/selecting files (implementing [Entity Browser](modules/entity_browser/intro.md)). ([d.o](https://www.drupal.org/project/file_browser))
- * *Latest Status:* TBA
+ * *Latest Status:* Alpha
 
 
 * [**Image Widget Crop:**](image_widget_crop/intro.md) provides an interface for using the features of the [Crop API](https://www.drupal.org/project/crop) ([d.o](https://www.drupal.org/project/image_widget_crop))
  * *Latest Status:* Stable (general availability) release
+
+
+* **Media Entity Browser:** provides a nice content creator/editor experience for browsing and selecting existing media entities. It is built upon the [Entity Browser](modules/entity_browser/intro.md) module, improving the UI and providing a pre-configured browser out-of-the-box. ([d.o](https://www.drupal.org/project/media_entity_browser))
+ * *Latest Status:* TBA
 
 
 * [**URL Embed:**](url_embed/intro.md) allows embedding of external URLs using the Drupal 8 WYSIWYG or link fields ([d.o](https://www.drupal.org/project/url_embed))
@@ -74,12 +82,12 @@ The modules are intended to be used together as needed in order to provide as ba
 
 ###D8 Media Feature Modules
 
-* **[Media:](media/intro.md)** full featured media module for Drupal 8 which depends on other D8 modules to provide functionality. This module comes with lot of configuration files to provide most of the basic features.
- * *Latest Status:* Alpha
+* **[Media:](media/intro.md)** full featured media module for Drupal 8 which depends on other D8 modules to provide functionality. This module comes with lot of configuration files to provide most of the basic features. ([d.o](https://www.drupal.org/project/media))
+ * *Latest Status:* TBA
 
 
 * [**Media Pinkeye:**](media_pinkeye/intro.md) one of the "full-featured" media solutions for Drupal 8. It's goal is to provide basic media features and experience (WordPress parity) ([d.o](https://www.drupal.org/project/media_pinkeye))
  * *Latest Status:* TBA
  
  
- 
+ **NOTE**: The "Latest Status" information was last updated on **October, 11th, 2016**. You are encouraged to visit each module page to get potentially more updated information on its status.
