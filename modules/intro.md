@@ -79,6 +79,8 @@ The modules are intended to be used together as needed in order to provide as ba
 * [**Field Formatter:**](field_formatter/intro.md) provides a field formatter that can attempt multiple formatters and the first one that returns output wins. ([d.o](https://www.drupal.org/project/field_formatter))
  * *Latest Status:* Stable (general availability) release
 
+* **Media Expire:** This module enables you to unpublish your media entites automatically by setting an expire field. ([d.o](https://www.drupal.org/project/media_expire))
+ * *Latest Status:* Alpha
 
 ###D8 Media Feature Modules
 
