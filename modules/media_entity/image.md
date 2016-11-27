@@ -4,6 +4,10 @@ Implements media entity resource provider for local images.
 
 Project page: (https://drupal.org/project/media_entity_image)
 
+## Usage
+
+You can find a video tutorial about using Media Entity Image by Marcos Cano at [https://www.youtube.com/watch?v=vOv8pmv5i2U](https://www.youtube.com/watch?v=vOv8pmv5i2U)
+
 ## Other extensions
 
 - [Entity browser](../entity_browser/intro.md): Provides entity browser
