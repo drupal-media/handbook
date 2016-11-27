@@ -35,8 +35,10 @@
     * [File Entity](modules/file_entity/intro.md)
     * [File Entity Browser](modules/file_browser/README.md)
     * [Media Entity](modules/media_entity/intro.md)
-        * [Configuration UI](modules/media_entity/configuration_ui.md)
+        * [Creating a media bundle](modules/media_entity/create_bundle.md)
+        * [Creating a view mode](modules/media_entity/create_view_mode.md)
         * [Basic Usage](modules/media_entity/basic_usage.md)
+        * [Automatic name for media entities](modules/media_entity/auto_name.md)
         * [Type Providers](modules/media_entity/type_providers.md)
         * [Image](modules/media_entity/image.md)
         * [Audio](modules/media_entity/audio.md)
@@ -61,4 +63,3 @@
         * [Configuration](modules/media/configuration.md)
         * [Embedding media](modules/media/embedding-media.md)
         * [Media entity browsers](modules/media/media-entity-browsers.md)
-

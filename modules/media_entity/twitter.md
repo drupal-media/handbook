@@ -18,61 +18,53 @@
 
 If you need just to embembed tweets you can use this module wihout using Twitter's API. That will give you access to the fields available from the url/embed code: id and user.
 
-1. Create a Media bundle
-  * On `admin/structure` choose **Media bundles**
+1. Follow the instructions about [creating a media bundle](create_bundle.md)
 
-    ![Step 1](images/twitter/step_1.png)
-  * Click on **+ Add media bundle**
-  
-    ![Step 2](images/twitter/step_2.png)
-  * Fill *Label*, *Description* and *Type provider fields* (for type provider choose "Twitter") for your media bundle and click **Save media bundle**
-  
-    ![Step 3](images/twitter/step_3.png)
 2. Create a Twitter link field on a Media bundle
   * On media bundles overview page choose **Manage fields** on created **Twitter** bundle.
-  
+
    ![Step 4](images/twitter/step_4.png)
   * Click on **+ Add field**. For a storage type choose **Link** (for URL) or **Text (plain)** (for embed code), fill a *Label* field and click **Save and continue**.
-  
+
    ![Step 5](images/twitter/step_5.png)
 3. Return to the bundle configuration and set "Field with source information" to use this new field.
 
    ![Step 6](images/twitter/step_6.png)
 4. Create a Media entity
   * On `admin/content/media` click on **+ Add media**
-  
+
    ![Step 7](images/twitter/step_7.png)
   * Fill *Media name* and *Twitter url link* fields similarly as it is displayed below and click **Save**.
-  
+
    ![Step 8](images/twitter/step_8.png)
   * The created Twitter media entity is saved.
-  
+
    ![Step 9](images/twitter/step_9.png)
 5. Add an entity (media) reference field on a content type
   * On desired content type (i.e. Article), on `admin/structure/types`, click on **Manage fields**
-  
+
    ![Step 10](images/twitter/step_10.png)
   * Click on **+ Add field**
-  
+
    ![Step 11](images/twitter/step_11.png)
   * From **References** menu choose **Other**, fill the *Label* and click **Save and continue**
-  
+
    ![Step 12](images/twitter/step_12.png)
   * Choose **Media** for **Type of item to reference** and click **Save field settings**
-  
+
    ![Step 13](images/twitter/step_13.png)
   * Select **Twitter** bundle in **Reference type section** and click **Save settings**
-  
+
    ![Step 14](images/twitter/step_14.png)
 9. Create a new article with embedded Twitter posts
   * For an **Twitter reference** field choose a created entity Twitter entity.
-  
+
    ![Step 15](images/twitter/step_15.png)
   * The Twitter post is displayed on the saved article page.
 
 ### With Twitter API
 
-If you need to get other fields, you will need to use Twitter's API. 
+If you need to get other fields, you will need to use Twitter's API.
 
 **IMPORTANT:** beware that there is limit on the number of request that can be made for free. [Read more](https://dev.twitter.com/rest/public)
 
