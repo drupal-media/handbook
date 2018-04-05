@@ -15,6 +15,10 @@ Other good examples or modules that showcase what you can do with the Entity Bro
 
 If your need is to work only with images/files, the module [File Entity Browser](https://drupal.org/project/file_browser) is a very good starting point to get up and running with Entity Browser to provide nice content creation experiences and re-usability of core files/images. It also allows you to bulk upload images using a Drag & Drop zone, using the [dropzonejs](../dropzonejs/intro.md) library.
 
+### Media Entity Browser
+
+Similarly to the File Entity Browser, the [Media Entity Browser](https://drupal.org/project/media_entity_browser) module is intended to be a good starting point for browsing Media Entities, with some theming to improve the content authoring experience.
+
 ### Content Browser
 
 Similarly to the previous example, the [Content Browser](https://drupal.org/project/content_browser) module is intended to be a tool for selecting nodes on your site, and provides out of the box a nicely configured browser with some theming and fine-tuning.
@@ -25,7 +29,7 @@ One level beyond, the [lightning](https://www.drupal.org/project/lightning) is a
 
 
 
-## Development 
+## Development
 
 We use Github pull request workflow. In order to contribute to the module please [create a pull request](https://github.com/drupal-media/entity_browser/compare) and cross-link it with the [relevant drupal.org issue](https://www.drupal.org/project/issues/entity_browser).
 
