@@ -19,9 +19,6 @@ It offers the following features:
  * It works with files stored locally or remotely.
  * It should work with any quantity of files.
 
-WARNING! Once you have started file checking, File checker cannot be 
-uninstalled.
-
 #User Interface
 
 The File checker UI is at admin/config/media/file-system/file-checker.
