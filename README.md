@@ -1,6 +1,6 @@
 # Drupal 8 Media Guide
 
-##Introduction
+## Introduction
 
 This guide provides and overview of the approach to Media in Drupal 8.
 
@@ -16,7 +16,7 @@ We also hope that this guide will help you understand best practices and get sta
 
 The Drupal Media team is actively seeking contributions and new team members. There are many ways to get involved, including helping with funding, project management communications, documentation, testing and development. Submit edits to this guide at the [GitHub repository](https://github.com/drupal-media/d8-guide). Please check out our [Contributing](contributing.md) page for full details.
 
-##Using this Guide
+## Using this Guide
 
 As mentioned above, Media for Drupal 8 is undergoing a re-architecture into individual components. For example, the Media Browser functionality is being developed into the **Entity Browser** module and embedding media in WYSIWYG is being developed into the **Entity Embed** module.
 
