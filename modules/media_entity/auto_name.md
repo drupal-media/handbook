@@ -1,6 +1,6 @@
 ## Using the "automatic name" functionality for your media entities
 
-As with any entity in drupal, all media entities need to have a human-readable label attached to each instance created. The media_entity module autommatically creates a base-field for this, called "Media name".
+As with any entity in drupal, all media entities need to have a human-readable label attached to each instance created. The media_entity module automatically creates a base-field for this, called "Media name".
 
 If you want your editors to be able to input / edit this value manually on each entity, you don't need to do anything, aside from probably configuring some of the field widget settings on the form, such as textfield size, placeholder, etc. These settings can be configured at the URL: ``` admin/structure/media/manage/{your-bundle-name}/form-display ```
 
